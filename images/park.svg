@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">A clean community park</title>
+  <desc id="desc">A sunny block-built park with leafy trees, a winding path, a bench, flowers, and sorting bins.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#75cdef"/>
+      <stop offset="1" stop-color="#d7f3dc"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="600" fill="url(#sky)"/>
+  <rect x="702" y="66" width="92" height="92" fill="#ffdc70"/>
+  <g fill="#f4ffff">
+    <rect x="98" y="113" width="114" height="27"/><rect x="126" y="86" width="58" height="27"/>
+    <rect x="394" y="77" width="100" height="25"/><rect x="420" y="52" width="52" height="25"/>
+  </g>
+  <rect y="335" width="900" height="265" fill="#62b660"/>
+  <rect y="382" width="900" height="218" fill="#4ea553"/>
+  <rect y="478" width="900" height="122" fill="#408f4d"/>
+  <!-- path -->
+  <path d="M373 600q54-89 16-164t44-101h102q-62 55-16 116t-28 149z" fill="#d4bb89"/>
+  <path d="M420 600q40-67 13-116t23-73" fill="none" stroke="#e5d3ab" stroke-width="9" stroke-dasharray="17 16"/>
+  <!-- trees -->
+  <g>
+    <rect x="117" y="291" width="37" height="134" fill="#80543a"/>
+    <rect x="72" y="212" width="128" height="99" fill="#278049"/>
+    <rect x="94" y="174" width="86" height="38" fill="#3c9b51"/>
+    <rect x="48" y="251" width="39" height="43" fill="#318b49"/>
+    <rect x="676" y="278" width="38" height="139" fill="#80543a"/>
+    <rect x="628" y="193" width="135" height="108" fill="#278049"/>
+    <rect x="652" y="153" width="91" height="40" fill="#3c9b51"/>
+    <rect x="746" y="231" width="43" height="50" fill="#318b49"/>
+    <rect x="258" y="328" width="27" height="86" fill="#80543a"/>
+    <rect x="227" y="277" width="91" height="66" fill="#378e4d"/>
+    <rect x="245" y="249" width="58" height="28" fill="#49a95c"/>
+  </g>
+  <!-- bench -->
+  <rect x="492" y="376" width="132" height="17" fill="#bd7745"/>
+  <rect x="492" y="402" width="132" height="16" fill="#965a3b"/>
+  <rect x="505" y="418" width="13" height="37" fill="#72513b"/>
+  <rect x="599" y="418" width="13" height="37" fill="#72513b"/>
+  <!-- sorting bins -->
+  <g>
+    <rect x="760" y="399" width="50" height="69" fill="#168d73"/>
+    <rect x="753" y="390" width="64" height="13" fill="#116d61"/>
+    <rect x="816" y="399" width="50" height="69" fill="#f0b644"/>
+    <rect x="809" y="390" width="64" height="13" fill="#c48b2d"/>
+    <path d="m779 416 10 6-5 1 7 11-6 4-7-11-3 6-4-12z" fill="#e9f8cf"/>
+    <rect x="831" y="418" width="20" height="20" fill="#fff1ba"/>
+  </g>
+  <!-- flowers -->
+  <g fill="#ffe37a">
+    <rect x="185" y="466" width="13" height="13"/><rect x="226" y="502" width="13" height="13"/>
+    <rect x="666" y="487" width="14" height="14"/><rect x="318" y="445" width="12" height="12"/>
+  </g>
+  <g fill="#f28a82">
+    <rect x="174" y="489" width="13" height="13"/><rect x="645" y="456" width="13" height="13"/>
+    <rect x="291" y="495" width="14" height="14"/>
+  </g>
+  <g fill="#d8eea0"><rect x="150" y="520" width="13" height="13"/><rect x="704" y="520" width="12" height="12"/><rect x="349" y="503" width="12" height="12"/></g>
+</svg>

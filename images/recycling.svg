@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">A neighborhood recycling center</title>
+  <desc id="desc">A colorful block-built recycling center with solar panels, sorting bays, and separate material bins.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#77cdef"/>
+      <stop offset="1" stop-color="#d7f3db"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="600" fill="url(#sky)"/>
+  <rect x="728" y="64" width="88" height="88" fill="#ffdc70"/>
+  <g fill="#f4ffff">
+    <rect x="114" y="103" width="105" height="26"/><rect x="139" y="77" width="55" height="26"/>
+    <rect x="638" y="182" width="106" height="25"/><rect x="664" y="157" width="54" height="25"/>
+  </g>
+  <rect y="358" width="900" height="242" fill="#64b65c"/>
+  <rect y="418" width="900" height="182" fill="#4d9d50"/>
+  <!-- distant trees -->
+  <g>
+    <rect x="88" y="307" width="26" height="88" fill="#80543a"/>
+    <rect x="54" y="251" width="96" height="74" fill="#348d4d"/>
+    <rect x="71" y="221" width="61" height="30" fill="#48a659"/>
+    <rect x="790" y="302" width="26" height="89" fill="#80543a"/>
+    <rect x="756" y="246" width="95" height="72" fill="#348d4d"/>
+    <rect x="773" y="216" width="61" height="30" fill="#48a659"/>
+  </g>
+  <!-- center building -->
+  <rect x="193" y="229" width="513" height="251" fill="#f1d59d"/>
+  <rect x="176" y="211" width="550" height="38" fill="#477c68"/>
+  <path d="M176 211 320 134h282l124 77z" fill="#356c5d"/>
+  <rect x="214" y="254" width="470" height="28" fill="#d6b87f"/>
+  <!-- solar panels -->
+  <g fill="#467e9f" stroke="#d3eaf0" stroke-width="4">
+    <path d="M344 167h98l22 36h-98z"/><path d="M463 167h98l22 36h-98z"/>
+  </g>
+  <g stroke="#bce3ed" stroke-width="3">
+    <path d="m378 168 17 34m14-34 17 34m-86-17h109"/>
+    <path d="m497 168 17 34m14-34 17 34m-86-17h109"/>
+  </g>
+  <!-- loading bays -->
+  <rect x="230" y="304" width="164" height="176" fill="#458775"/>
+  <rect x="247" y="320" width="130" height="160" fill="#304e48"/>
+  <rect x="415" y="304" width="164" height="176" fill="#458775"/>
+  <rect x="432" y="320" width="130" height="160" fill="#304e48"/>
+  <rect x="600" y="304" width="71" height="176" fill="#d8bf8d"/>
+  <rect x="614" y="326" width="43" height="85" fill="#a9e3e1"/>
+  <rect x="614" y="425" width="43" height="55" fill="#80543a"/>
+  <!-- recycling symbols on bays -->
+  <path d="m296 358 18 11-8 2 13 20-10 6-13-20-4 10-7-21z" fill="#98d96c"/>
+  <path d="m481 358 18 11-8 2 13 20-10 6-13-20-4 10-7-21z" fill="#98d96c"/>
+  <!-- sorting bins -->
+  <g>
+    <rect x="249" y="436" width="56" height="58" fill="#188c73"/>
+    <rect x="242" y="428" width="70" height="12" fill="#126c61"/>
+    <rect x="321" y="436" width="56" height="58" fill="#e0a83d"/>
+    <rect x="314" y="428" width="70" height="12" fill="#bb812c"/>
+    <rect x="434" y="436" width="56" height="58" fill="#6486b2"/>
+    <rect x="427" y="428" width="70" height="12" fill="#49648d"/>
+    <path d="m267 449 12 7-6 1 8 12-7 4-8-12-3 7-5-14z" fill="#e4f3c8"/>
+    <rect x="338" y="451" width="22" height="19" fill="#fff0b0"/>
+    <rect x="450" y="451" width="23" height="18" fill="#e5f3f5"/>
+  </g>
+  <!-- clean paved approach -->
+  <path d="M190 480h520v120H190z" fill="#c4b995"/>
+  <path d="M215 490h470v14H215zm0 38h470v14H215zm0 38h470v14H215z" fill="#b0a984"/>
+  <g fill="#d5eda1"><rect x="124" y="496" width="12" height="12"/><rect x="162" y="538" width="12" height="12"/><rect x="745" y="510" width="13" height="13"/></g>
+</svg>

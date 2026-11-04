@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">A greener neighborhood house</title>
+  <desc id="desc">A colorful, block-built house with a garden, trees, and a recycling bin under a bright sky.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#83d8f2"/>
+      <stop offset="1" stop-color="#d8f4dc"/>
+    </linearGradient>
+    <linearGradient id="sun" x2="0" y2="1">
+      <stop stop-color="#fff28a"/>
+      <stop offset="1" stop-color="#ffbf52"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="600" fill="url(#sky)"/>
+  <rect x="650" y="62" width="100" height="100" fill="url(#sun)"/>
+  <g fill="#f3ffff">
+    <rect x="112" y="111" width="112" height="28"/><rect x="140" y="83" width="58" height="28"/>
+    <rect x="693" y="202" width="118" height="28"/><rect x="721" y="174" width="62" height="28"/>
+  </g>
+  <path d="M0 348h900v252H0z" fill="#70bb63"/>
+  <path d="M0 390h900v210H0z" fill="#58a957"/>
+  <path d="M0 455h900v145H0z" fill="#47964e"/>
+  <g opacity=".35" fill="#a5d875">
+    <rect x="0" y="347" width="900" height="16"/><rect x="0" y="383" width="900" height="12"/>
+  </g>
+  <!-- Home -->
+  <rect x="264" y="239" width="379" height="222" fill="#f3cf92"/>
+  <rect x="246" y="220" width="414" height="48" fill="#cc7250"/>
+  <path d="M225 244 451 91l232 153v35H225z" fill="#a84f3b"/>
+  <path d="m274 235 177-120 181 120v20H274z" fill="#d77b51"/>
+  <rect x="302" y="284" width="76" height="77" fill="#a8e8ed"/>
+  <rect x="292" y="274" width="96" height="16" fill="#fff0bf"/>
+  <rect x="330" y="284" width="16" height="77" fill="#fff0bf"/>
+  <rect x="525" y="284" width="76" height="77" fill="#a8e8ed"/>
+  <rect x="515" y="274" width="96" height="16" fill="#fff0bf"/>
+  <rect x="553" y="284" width="16" height="77" fill="#fff0bf"/>
+  <rect x="411" y="350" width="82" height="111" fill="#80503b"/>
+  <rect x="424" y="363" width="56" height="47" fill="#a16b4d"/>
+  <rect x="472" y="407" width="9" height="9" fill="#f7d969"/>
+  <rect x="253" y="455" width="402" height="24" fill="#e1ae6f"/>
+  <!-- garden path -->
+  <path d="M432 461h38l50 139h-140z" fill="#c7ad7b"/>
+  <g>
+    <rect x="118" y="314" width="35" height="117" fill="#80543c"/>
+    <rect x="73" y="245" width="127" height="88" fill="#348b4d"/>
+    <rect x="97" y="206" width="80" height="39" fill="#49a85a"/>
+    <rect x="162" y="272" width="37" height="39" fill="#58b865"/>
+    <rect x="697" y="332" width="33" height="100" fill="#80543c"/>
+    <rect x="655" y="262" width="113" height="82" fill="#348b4d"/>
+    <rect x="678" y="222" width="68" height="40" fill="#49a85a"/>
+    <rect x="739" y="291" width="42" height="40" fill="#58b865"/>
+  </g>
+  <!-- garden beds -->
+  <rect x="270" y="474" width="112" height="28" fill="#8a5939"/>
+  <g fill="#ef8e72">
+    <rect x="286" y="448" width="20" height="26"/><rect x="341" y="444" width="20" height="30"/>
+  </g>
+  <g fill="#ffe17a">
+    <rect x="312" y="455" width="18" height="19"/><rect x="359" y="451" width="18" height="23"/>
+  </g>
+  <!-- recycling bin -->
+  <rect x="724" y="442" width="60" height="75" fill="#168c74"/>
+  <rect x="716" y="432" width="76" height="15" fill="#116e61"/>
+  <path d="m752 460 13 8-7 1 9 13-7 4-9-13-3 7-5-15z" fill="#d8f8c7"/>
+  <g fill="#e6f4a8"><rect x="38" y="516" width="12" height="12"/><rect x="199" y="540" width="10" height="10"/><rect x="839" y="487" width="13" height="13"/></g>
+</svg>

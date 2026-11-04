@@ -1,233 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Dandora Smart Waste Management</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dandora Waste Management</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-    <div class="logo">♻ Dandora Smart Waste</div>
-
-    <ul>
-        <li><a href="#problem">Problem</a></li>
-        <li><a href="#solution">Solution</a></li>
-        <li><a href="#tour">Tour</a></li>
-        <li><a href="#data">Data</a></li>
-        <li><a href="#impact">Impact</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-
-<header class="hero">
-
-    <div class="hero-content">
-
-        <h1>Dandora Smart Waste Management</h1>
-
-        <p>
-            Turning Waste Into Opportunity Through Recycling,
-            Smart Technology and Community Action.
-        </p>
-
-        <div class="hero-buttons">
-            <a href="#solution" class="btn">Explore Project</a>
-            <a href="#impact" class="btn btn-outline">View Impact</a>
+<header>
+    <div class="logo">
+        <span class="recycle">♻</span>
+        <div>
+            <h1>DANDORA</h1>
+            <h2>WASTE MANAGEMENT</h2>
+            <p>Clean Dandora, Healthy Nairobi</p>
         </div>
-
-        <div class="hero-icon">
-            🌍♻️🌱
-        </div>
-
     </div>
 
+    <nav>
+        <button class="active" onclick="showPage('home', this)">Home</button>
+        <button onclick="showPage('problem', this)">The Problem</button>
+        <button onclick="showPage('solutions', this)">Our Solutions</button>
+        <button onclick="showPage('impact', this)">Our Impact</button>
+        <button onclick="showPage('gallery', this)">Gallery</button>
+        <button onclick="showPage('contact', this)">Contact</button>
+    </nav>
 </header>
 
-<section id="problem">
+<main>
 
-    <h2>🚨 The Problem</h2>
+    <!-- HOME PAGE -->
+    <section id="home" class="page active">
+        <div class="hero">
+            <div class="hero-text">
+                <h2>DANDORA</h2>
+                <h3>WASTE MANAGEMENT</h3>
+                <h4>Reduce • Reuse • Recycle</h4>
 
-    <div class="grid">
+                <p class="yellow-text">
+                    For a Cleaner, Healthier Dandora
+                </p>
 
-        <div class="card">
-            <span>🗑️</span>
-            <h3>Illegal Dumping</h3>
-            <p>Waste is dumped in undesignated areas.</p>
+                <p>
+                    Together, we can turn waste into
+                    a cleaner and greener community.
+                </p>
+
+                <button class="main-btn"
+                    onclick="showPage('solutions')">
+                    Learn More →
+                </button>
+            </div>
+
+            <img
+                src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=1000"
+                alt="Waste collection and recycling">
         </div>
 
-        <div class="card">
-            <span>☣️</span>
-            <h3>Pollution</h3>
-            <p>Roads, rivers and public spaces become polluted.</p>
+        <div class="home-cards">
+
+            <div class="small-card">
+                <span>⚠️</span>
+                <h3>The Problem</h3>
+                <p>Garbage heaps, blocked drainage and pollution.</p>
+                <button onclick="showPage('problem')">Learn More →</button>
+            </div>
+
+            <div class="small-card">
+                <span>🌱</span>
+                <h3>Our Solutions</h3>
+                <p>Reduce, reuse, recycle and educate communities.</p>
+                <button onclick="showPage('solutions')">Learn More →</button>
+            </div>
+
+            <div class="small-card">
+                <span>📊</span>
+                <h3>Our Impact</h3>
+                <p>Cleaner surroundings and healthier families.</p>
+                <button onclick="showPage('impact')">Learn More →</button>
+            </div>
+
+            <div class="small-card">
+                <span>👥</span>
+                <h3>Get Involved</h3>
+                <p>Join us in creating a cleaner Dandora.</p>
+                <button onclick="showPage('contact')">Contact Us →</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROBLEM PAGE -->
+    <section id="problem" class="page content-page">
+        <h2 class="section-title">THE WASTE PROBLEM IN DANDORA</h2>
+
+        <p class="intro">
+            Poor waste disposal affects our environment,
+            health and quality of life. Some communities
+            face garbage heaps, dirty drainage and pollution.
+        </p>
+
+        <div class="problem-grid">
+
+            <div class="photo-card">
+                <img src="https://images.unsplash.com/photo-1605600659873-d808a13e4d9a?w=800"
+                     alt="Waste pollution">
+                <h3>Garbage Heaps</h3>
+                <p>Uncollected rubbish makes neighbourhoods dirty.</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="https://images.unsplash.com/photo-1618477461853-cf6ed80faba5?w=800"
+                     alt="Plastic waste">
+                <h3>Plastic Pollution</h3>
+                <p>Plastic waste can pollute land and water.</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="https://images.unsplash.com/photo-1516550893923-42d28e5677af?w=800"
+                     alt="Polluted environment">
+                <h3>Blocked Drainage</h3>
+                <p>Waste in drains can contribute to flooding.</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?w=800"
+                     alt="Environmental pollution">
+                <h3>Health Risks</h3>
+                <p>Poor waste management can create unhealthy surroundings.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SOLUTIONS PAGE -->
+    <section id="solutions" class="page content-page">
+        <h2 class="section-title">OUR SOLUTIONS</h2>
+
+        <p class="intro">
+            We believe that a cleaner Dandora starts with
+            responsible waste disposal and community action.
+        </p>
+
+        <div class="solutions-grid">
+
+            <div class="solution-card">
+                <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=800"
+                     alt="Recycling waste">
+                <h3>Waste Sorting</h3>
+                <p>Separate plastic, paper, glass and organic waste.</p>
+            </div>
+
+            <div class="solution-card">
+                <img src="https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?w=800"
+                     alt="Recycling materials">
+                <h3>Recycling</h3>
+                <p>Reuse materials and reduce waste sent to dumpsites.</p>
+            </div>
+
+            <div class="solution-card">
+                <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=800"
+                     alt="Community cleanup">
+                <h3>Community Cleanups</h3>
+                <p>Encourage residents to participate in cleanup activities.</p>
+            </div>
+
+            <div class="solution-card">
+                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800"
+                     alt="Environmental education">
+                <h3>Environmental Education</h3>
+                <p>Teach communities about proper waste disposal.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- IMPACT PAGE -->
+    <section id="impact" class="page content-page">
+        <h2 class="section-title">OUR IMPACT</h2>
+
+        <p class="intro">
+            These sample figures demonstrate how a waste
+            management project can track its activities.
+            Replace them with verified project data.
+        </p>
+
+        <div class="stats">
+            <div>
+                <h3>2,000</h3>
+                <p>Households Targeted</p>
+            </div>
+
+            <div>
+                <h3>1,000</h3>
+                <p>Residents to Educate</p>
+            </div>
+
+            <div>
+                <h3>500</h3>
+                <p>Waste Collection Targets</p>
+            </div>
+
+            <div>
+                <h3>15</h3>
+                <p>Institutions to Engage</p>
+            </div>
         </div>
 
-        <div class="card">
-            <span>🏥</span>
-            <h3>Health Risks</h3>
-            <p>Poor sanitation contributes to diseases.</p>
+        <div class="charts">
+
+            <div class="chart-card">
+                <h3>Waste Collection Progress</h3>
+                <canvas id="barChart"></canvas>
+            </div>
+
+            <div class="chart-card">
+                <h3>Waste Sorting Awareness</h3>
+                <canvas id="pieChart"></canvas>
+            </div>
+
         </div>
+    </section>
 
-    </div>
+    <!-- GALLERY PAGE -->
+    <section id="gallery" class="page content-page">
+        <h2 class="section-title">OUR COMMUNITY GALLERY</h2>
 
-</section>
+        <p class="intro">
+            Pictures showing waste challenges, recycling
+            activities and the goal of a cleaner community.
+        </p>
 
-<section id="solution" class="alt">
+        <div class="gallery-grid">
 
-    <h2>✅ Our Solution</h2>
+            <div>
+                <img src="https://images.unsplash.com/photo-1605600659873-d808a13e4d9a?w=800"
+                     alt="Waste disposal">
+                <h3>Waste Challenges</h3>
+            </div>
 
-    <div class="grid">
+            <div>
+                <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=800"
+                     alt="Community cleanup">
+                <h3>Community Cleanup</h3>
+            </div>
 
-        <div class="card">
-            ♻️
-            <h3>Recycling Centre</h3>
+            <div>
+                <img src="https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?w=800"
+                     alt="Recycling">
+                <h3>Recycling Activities</h3>
+            </div>
+
+            <div>
+                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800"
+                     alt="Green environment">
+                <h3>A Greener Environment</h3>
+            </div>
+
         </div>
+    </section>
 
-        <div class="card">
-            🗑️
-            <h3>Smart Waste Bins</h3>
+    <!-- CONTACT PAGE -->
+    <section id="contact" class="page content-page">
+        <h2 class="section-title">CONTACT US</h2>
+
+        <div class="contact-card">
+            <h3>Let's Work Together!</h3>
+            <p>
+                Join us in making Dandora cleaner,
+                healthier and greener.
+            </p>
+
+            <div class="contact-links">
+                <a href="https://wa.me/254700123456" target="_blank">
+                    WhatsApp
+                </a>
+
+                <a href="https://www.linkedin.com/" target="_blank">
+                    LinkedIn
+                </a>
+
+                <a href="mailto:info@example.com">
+                    Email Us
+                </a>
+            </div>
+
+            <p class="address">📍 Dandora, Nairobi, Kenya</p>
         </div>
+    </section>
 
-        <div class="card">
-            🌱
-            <h3>Compost Plant</h3>
-        </div>
-
-    </div>
-
-</section>
-
-<section id="tour">
-
-<h2>🌍 Dandora World Tour</h2>
-
-<div class="timeline">
-
-<div class="timeline-item">🗑 Dumpsite Area</div>
-<div class="line"></div>
-
-<div class="timeline-item">♻ Recycling Centre</div>
-<div class="line"></div>
-
-<div class="timeline-item">🌱 Compost Plant</div>
-<div class="line"></div>
-
-<div class="timeline-item">💧 Clean River</div>
-<div class="line"></div>
-
-<div class="timeline-item">🏙 Green Smart City</div>
-
-</div>
-
-</section>
-
-<section id="data" class="alt">
-
-<h2>📊 Project Data</h2>
-
-<div class="stats">
-
-<div class="stat-card">
-<h3 id="households">0</h3>
-<p>Households</p>
-</div>
-
-<div class="stat-card">
-<h3 id="waste">0</h3>
-<p>Waste (Kg)</p>
-</div>
-
-<div class="stat-card">
-<h3 id="zones">0</h3>
-<p>Zones</p>
-</div>
-
-</div>
-
-<div class="chart-container">
-
-<div class="chart-box">
-<canvas id="barChart"></canvas>
-</div>
-
-<div class="chart-box">
-<canvas id="pieChart"></canvas>
-</div>
-
-</div>
-
-</section>
-
-<section id="impact">
-
-<h2>🌱 Project Impact</h2>
-
-<div class="grid">
-
-<div class="impact-card">🌍 Cleaner Streets</div>
-
-<div class="impact-card">💧 Cleaner Rivers</div>
-
-<div class="impact-card">🏥 Better Public Health</div>
-
-<div class="impact-card">♻ Increased Recycling</div>
-
-<div class="impact-card">💼 Green Jobs</div>
-
-<div class="impact-card">🌳 Sustainable Future</div>
-
-</div>
-
-</section>
-
-<section class="about">
-
-<h2>📖 About The Project</h2>
-
-<p>
-The Dandora Smart Waste Management Project combines smart bins,
-recycling centres, composting systems and environmental awareness
-to transform waste into opportunities and create a sustainable future.
-</p>
-
-</section>
-
-<section id="contact" class="alt">
-
-<h2>📞 Contact Us</h2>
-
-<form>
-
-<input type="text" placeholder="Your Name">
-
-<input type="email" placeholder="Your Email">
-
-<textarea placeholder="Your Message"></textarea>
-
-<button type="submit">Send Message</button>
-
-</form>
-
-</section>
+</main>
 
 <footer>
-
-<h3>Dandora Smart Waste Management</h3>
-
-<p>Designed by Shally Vusha</p>
-
-<p>© 2026 All Rights Reserved</p>
-
+    <h2>♻ A CLEANER DANDORA = A HEALTHIER NAIROBI</h2>
+    <p>Reduce • Reuse • Recycle</p>
+    <p>© 2026 Dandora Waste Management</p>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="script.js"></script>
 
 </body>

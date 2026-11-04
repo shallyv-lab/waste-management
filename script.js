@@ -1,68 +1,112 @@
-function animateValue(id,end){
+// SHOW ONLY THE SELECTED PAGE
 
-let current=0;
+function showPage(pageId, selectedButton) {
 
-const el=document.getElementById(id);
+    let pages = document.querySelectorAll(".page");
 
-const timer=setInterval(()=>{
+    pages.forEach(function(page) {
+        page.classList.remove("active");
+    });
 
-current++;
+    document.getElementById(pageId).classList.add("active");
 
-el.textContent=current;
+    // Update the active navigation button
+    let buttons = document.querySelectorAll("nav button");
 
-if(current>=end){
-clearInterval(timer);
+    buttons.forEach(function(button) {
+        button.classList.remove("active");
+    });
+
+    if (selectedButton) {
+        selectedButton.classList.add("active");
+    } else {
+        buttons.forEach(function(button) {
+            if (button.getAttribute("onclick").includes(pageId)) {
+                button.classList.add("active");
+            }
+        });
+    }
+
+    // Create charts when the impact page is opened
+    if (pageId === "impact") {
+        createCharts();
+    }
 }
 
-},20);
 
+// CREATE THE GRAPHS
+
+let chartsCreated = false;
+
+function createCharts() {
+
+    if (chartsCreated) {
+        return;
+    }
+
+    // BAR CHART
+    let barCanvas = document.getElementById("barChart");
+
+    new Chart(barCanvas, {
+        type: "bar",
+
+        data: {
+            labels: ["2023", "2024", "2025"],
+
+            datasets: [{
+                label: "Waste Collected (Tons)",
+                data: [80, 110, 140],
+
+                backgroundColor: [
+                    "#078b19",
+                    "#35c52b",
+                    "#006b2e"
+                ],
+
+                borderRadius: 5
+            }]
+        },
+
+        options: {
+            responsive: true,
+            maintainAspectRatio: true,
+
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+
+    // PIE CHART
+    let pieCanvas = document.getElementById("pieChart");
+
+    new Chart(pieCanvas, {
+        type: "pie",
+
+        data: {
+            labels: ["Yes", "No"],
+
+            datasets: [{
+                data: [75, 25],
+
+                backgroundColor: [
+                    "#078b19",
+                    "#ff9800"
+                ]
+            }]
+        },
+
+        options: {
+            responsive: true,
+            maintainAspectRatio: true
+        }
+    });
+
+    chartsCreated = true;
 }
 
-animateValue("households",20);
-animateValue("waste",451);
-animateValue("zones",5);
 
-new Chart(document.getElementById("barChart"),{
 
-type:"bar",
-
-data:{
-labels:["Phase 1","Phase 2","Phase 3","Phase 4","Phase 5"],
-
-datasets:[{
-label:"Waste Generated (Kg)",
-data:[80,107,85,70,109],
-
-backgroundColor:[
-"#4CAF50",
-"#00C853",
-"#36A2EB",
-"#FFB300",
-"#8E24AA"
-]
-}]
-}
-
-});
-
-new Chart(document.getElementById("pieChart"),{
-
-type:"pie",
-
-data:{
-labels:["Phase 1","Phase 2","Phase 3","Phase 4","Phase 5"],
-
-datasets:[{
-data:[80,107,85,70,109],
-
-backgroundColor:[
-"#4CAF50",
-"#00C853",
-"#36A2EB",
-"#FFB300",
-"#8E24AA"
-]
-}]
-}
-
-});
